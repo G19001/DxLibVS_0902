@@ -7,7 +7,7 @@
 #define GAME_WINDOW_BAR		0	
 #define GAME_WINDOW_NAME	"DxLib_Movie"	
 
-#define MOVIE_PATH			".\\MOVIE\\Fireworks.mp4"	//“®‰æ‚ÌƒpƒX
+#define MOVIE_PATH			".\\MOVIE\\Fireworks.mp4"	//å‹•ç”»ã®ãƒ‘ã‚¹
 
 int handle = -1;
 
@@ -31,14 +31,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 		if (GetMovieStateToGraph(handle) == 0)
 		{
-			SeekMovieToGraph(handle, 0);	//“®‰æ‚ÌÄ¶ƒo[‚ğÅ‰‚©‚ç‚É‚·‚é
-			PlayMovieToGraph(handle);		//“®‰æ‚ğÄ¶ó‘Ô‚É‚·‚é
+			SeekMovieToGraph(handle, 0);	//å‹•ç”»ã®å†ç”Ÿãƒãƒ¼ã‚’æœ€åˆã‹ã‚‰ã«ã™ã‚‹
+			PlayMovieToGraph(handle);		//å‹•ç”»ã‚’å†ç”ŸçŠ¶æ…‹ã«ã™ã‚‹
 		}
 
-		//ƒ^ƒCƒgƒ‹“®‰æ•`‰æ
+		//ã‚¿ã‚¤ãƒˆãƒ«å‹•ç”»æç”»
 		DrawGraph(0, 0, handle, FALSE);
 
-		DrawString(0, 0, "“®‰æ‚ğÄ¶‚µ‚Ä‚¢‚Ü‚·EEE", GetColor(255, 255, 255));
+		DrawString(0, 0, "å‹•ç”»ã‚’å†ç”Ÿã—ã¦ã„ã¾ã™ãƒ»ãƒ»ãƒ»", GetColor(255, 255, 255)); //å‹•ç”»ã®èª¬æ˜
 
 		ScreenFlip();
 	}
